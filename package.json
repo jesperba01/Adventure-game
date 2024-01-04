@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/lechien73/terminal.git"
   },
-  "author": "",
+  "author": "Jesper",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lechien73/terminal/issues"
@@ -20,8 +20,5 @@
     "node-static": "^0.7.11",
     "node-pty": "^0.10.1",
     "total4": "^0.0.45"
-  },
-  "scripts": {
-    "start": "node index.js"
- }
+  }
 }

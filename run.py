@@ -51,3 +51,25 @@ def forest():
         return True
     else:
         cave()
+
+
+def cave():
+    """
+    Explore a cave with potential dangers and choices.
+    """
+    print("You enter the cave and find a torch.")
+    time.sleep(2)
+    print("Visibility is low. You see something moving in the shadows.")
+    time.sleep(2)
+    print("You see a small opening.")
+    time.sleep(2)
+    choice = make_choice([Fore.CYAN + "Investigate the shadows",
+                         Fore.CYAN + "Crawl through opening"])
+
+    if choice == 1:
+        print("You walk closer to see a big bear!")
+        time.sleep(2)
+        print("The bear chases you away.")
+        return False
+    else:
+        cave2()

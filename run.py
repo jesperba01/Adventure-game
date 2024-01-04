@@ -1,3 +1,31 @@
+"""
+Adventure Game
+
+This script implements a simple text-based adventure game where the player navigates through different scenarios,
+makes choices, and attempts to reach the treasure at the end of the journey.
+
+Functions:
+- introduction(): Display an introduction to the game.
+- main(): The main function that orchestrates the entire game, calling other functions based on player choices.
+- make_choice(options): Allow the player to make a choice from a list of options.
+
+Game:
+- forest(): Navigate through a dark forest with branching paths.
+- cave(): Explore a cave with potential dangers and choices.
+- cave2(): Continue the cave exploration with encounters with bandits.
+- forest2(): Follow the path after encountering a friendly creature.
+- lake(): Reach a lake and make decisions regarding a boat.
+- forest3(): Navigate through a dense forest with limited visibility.
+- desert(): Journey through a vast desert with choices on how to proceed.
+- desert2(): Continue the desert journey with decisions on resting or continuing.
+- night(): Experience nightfall and make decisions on waiting or going north.
+- mountain(): Face a steep mountain and decide whether to climb or go around.
+
+Note:
+- Colorama library is used for colored console output to enhance the user experience.
+- The game concludes with a message indicating whether the player successfully reached the treasure or not.
+"""
+
 import time
 import colorama
 from colorama import Fore

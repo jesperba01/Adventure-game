@@ -21,3 +21,18 @@ def make_choice(options):
     print("Choose your path:")
     for i, option in enumerate(options, 1):
         print(f"{i}. {option}")    
+    """
+    checks that answer is valid
+    """
+    while True:
+        try:
+            choice = int(input("Enter the number of your choice: "))
+            if 1 <= choice <= len(options):
+                return choice
+            else:
+                print("Invalid choice. Please try again.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")    
+
+
+

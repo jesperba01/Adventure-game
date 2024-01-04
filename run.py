@@ -222,3 +222,22 @@ def night():
         return False
 
 
+def mountain():
+    """
+    Face a steep mountain and decide whether to climb or go around.
+    """
+    print("You face a steep mountain.")
+    time.sleep(2)
+    choice = make_choice([Fore.CYAN + "Climb the mountain",
+                          Fore.CYAN + "Go around the mountain"])
+
+    if choice == 1:
+        print("You successfully climb the mountain.")
+        time.sleep(2)
+        print("You reach the summit and see the treasure ahead.")
+        return True
+    else:
+        print("You go around the mountain and encounter a group of bandits.")
+        time.sleep(2)
+        print("They steal your belongings.")
+        return False

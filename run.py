@@ -96,3 +96,24 @@ def cave2():
         time.sleep(2)
         print("You are to slow. They catch you. GAME OVER!")
         return False
+
+
+def forest2():
+    """
+    Follow the path after encountering a friendly creature.
+    """
+    print("The creature has to leave.")
+    time.sleep(2)
+    print("he point you in the right direction")
+    time.sleep(2)
+    print("your path splits in two")
+    choice = make_choice([Fore.CYAN + "Left", Fore.CYAN + "Right"])
+
+    if choice == 1:
+        print("You reach a lake!")
+        time.sleep(2)
+        return True
+    else:
+        print("The road fades. you are lost")
+        time.sleep(2)
+        return False

@@ -35,4 +35,19 @@ def make_choice(options):
             print("Invalid input. Please enter a number.")    
 
 
+def forest():
+    """
+    Navigate through a dark forest with branching paths.
+    """
+    print("You enter a dark forest.")
+    time.sleep(2)
+    choice = make_choice([Fore.CYAN + "Follow the path",
+                         Fore.CYAN + "Enter the cave"])
 
+    if choice == 1:
+        print("You follow the path and encounter a friendly creature.")
+        time.sleep(2)
+        print("The creature guides you to safety.")
+        return True
+    else:
+        cave()

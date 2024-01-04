@@ -181,3 +181,23 @@ def desert():
         print("You find an oasis and replenish your water supply.")
         time.sleep(2)
         return True
+
+
+def desert2():
+    """
+    Continue the desert journey with decisions on resting or continuing.
+    """
+    print("Your water supply is full")
+    time.sleep(2)
+    choice = make_choice(
+        [Fore.CYAN + "Sit down and rest for a bit", Fore.CYAN + "keep going"])
+
+    if choice == 1:
+        print("You fell asleep")
+        time.sleep(2)
+        night()
+    else:
+        print("You continue your jurney")
+        return True
+
+

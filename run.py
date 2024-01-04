@@ -201,3 +201,24 @@ def desert2():
         return True
 
 
+def night():
+    """
+    Experience nightfall and make decisions on waiting or going north.
+    """
+    print("You fell asleep. Its now night")
+    time.sleep(2)
+    print("You've forgot where you came from")
+    time.sleep(2)
+    choice = make_choice(
+        [Fore.CYAN + "Wait for morning", Fore.CYAN + "Go north"])
+
+    if choice == 1:
+        print("You wait until morgning and can see your foot stepps")
+        time.sleep(2)
+        print("You continue forward")
+        return True
+    else:
+        print("You are lost!")
+        return False
+
+

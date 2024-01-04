@@ -161,3 +161,23 @@ def forest3():
         time.sleep(2)
         print("It chase you away. GAME OVER!")
         return False
+
+
+def desert():
+    """
+    Journey through a vast desert with choices on how to proceed.
+    """
+    print("You arrive in a vast desert.")
+    time.sleep(2)
+    choice = make_choice(
+        [Fore.CYAN + "Walk through the desert", Fore.CYAN + "Find an oasis"])
+
+    if choice == 1:
+        print("You walk through the desert and get dehydrated.")
+        time.sleep(2)
+        print("Game over! You collapse from exhaustion.")
+        return False
+    else:
+        print("You find an oasis and replenish your water supply.")
+        time.sleep(2)
+        return True

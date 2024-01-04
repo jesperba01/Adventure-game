@@ -275,3 +275,7 @@ def main():
             print(Fore.RED + "Game over! You did not reach the treasure.")
     else:
         print(Fore.RED + "Game over! You did not reach the treasure.")
+
+
+if __name__ == "__main__":
+    main()

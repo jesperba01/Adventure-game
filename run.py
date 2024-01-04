@@ -241,3 +241,37 @@ def mountain():
         time.sleep(2)
         print("They steal your belongings.")
         return False
+
+
+def main():
+    """
+    The main function that orchestrates the entire game, calling other functions based on player choices.
+    """
+    introduction()
+
+    if forest():
+        if forest2():
+            if lake():
+                if forest3():
+                    if desert():
+                        if desert2():
+                            if mountain():
+                                print(
+                                    Fore.GREEN + "Congratulations! You reached the treasure.")
+                                print(Fore.GREEN + "You have Won!")
+                            else:
+                                print(
+                                    Fore.RED + "Game over! You did not reach the treasure.")
+                        else:
+                            print(
+                                Fore.RED + "Game over! You did not reach the treasure.")
+                    else:
+                        print(Fore.RED + "Game over! You did not reach the treasure.")
+                else:
+                    print(Fore.RED + "Game over! You did not reach the treasure.")
+            else:
+                print(Fore.RED + "Game over! You did not reach the treasure.")
+        else:
+            print(Fore.RED + "Game over! You did not reach the treasure.")
+    else:
+        print(Fore.RED + "Game over! You did not reach the treasure.")

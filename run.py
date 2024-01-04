@@ -117,3 +117,25 @@ def forest2():
         print("The road fades. you are lost")
         time.sleep(2)
         return False
+
+
+def lake():
+    """
+    Reach a lake and make decisions.
+    """
+    print("You've reached a lake")
+    time.sleep(2)
+    print("You see a boat")
+    choice = make_choice(
+        [Fore.CYAN + "Go around", Fore.CYAN + "Take the boat"])
+
+    if choice == 1:
+        print("You encounter a wolf")
+        time.sleep(2)
+        print("It chase you away. GAME OVER!")
+        return False
+    else:
+        print("You find two oars and row across the lake")
+        return True
+
+

@@ -73,3 +73,26 @@ def cave():
         return False
     else:
         cave2()
+
+
+def cave2():
+    """
+    Continue the cave exploration with encounters with bandits.
+    """
+    print("You arrive in a bigger cave whit bandits.")
+    time.sleep(2)
+    print("They seem to be sleeping.")
+    time.sleep(2)
+    choice = make_choice(
+        [Fore.CYAN + "Try to sneak past", Fore.CYAN + "Make a run for it"])
+
+    if choice == 1:
+        print("You stepped on a twig and woke them")
+        time.sleep(2)
+        print("They steal your belongings. GAME OVER!")
+        return False
+    else:
+        print("You run for as fast as you can!")
+        time.sleep(2)
+        print("You are to slow. They catch you. GAME OVER!")
+        return False

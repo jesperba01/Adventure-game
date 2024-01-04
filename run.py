@@ -139,3 +139,25 @@ def lake():
         return True
 
 
+def forest3():
+    """
+    Navigate through a dense forest with limited visibility.
+    """
+    print("You leave the boat and enters a forest!")
+    time.sleep(2)
+    print("The forest is dense. you can hardly see.")
+    time.sleep(2)
+    choice = make_choice([Fore.CYAN + "Keep going", Fore.CYAN + "Turn back"])
+
+    if choice == 1:
+        print("You Keep going forward")
+        time.sleep(2)
+        print("You see something ahead")
+        return True
+    else:
+        print("You turnd back!")
+        time.sleep(2)
+        print("A wolf followed you around the lake.")
+        time.sleep(2)
+        print("It chase you away. GAME OVER!")
+        return False

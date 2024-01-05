@@ -1,4 +1,4 @@
-# [PROJECT 3 UPPDATER](https://adventure-game-project-553bd396fd59.herokuapp.com/)
+# [ADVENTURE GAME](https://adventure-game-project-553bd396fd59.herokuapp.com/)
 
 The Adventure Game is a text-based Python script that immerses players in a  journey through various scenarios. Players navigate a dark forest, explore caves, face bandits, encounter friendly creatures, and make decisions to reach the treasure.
 

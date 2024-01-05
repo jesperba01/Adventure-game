@@ -1,6 +1,12 @@
-# [PROJECT 3 UPPDATER](https://jesper-advenure-88c987491d21.herokuapp.com)
+# [PROJECT 3 UPPDATER](https://adventure-game-project-553bd396fd59.herokuapp.com/)
 
+The Adventure Game is a text-based Python script that immerses players in a  journey through various scenarios. Players navigate a dark forest, explore caves, face bandits, encounter friendly creatures, and make decisions to reach the treasure.
 
+## Key Functions:
+
+- introduction(): Sets the stage by introducing players to the game.
+- make_choice(options): Allows players to make decisions from a list of options.
+- forest(), cave(), cave2(), forest2(), lake(), forest3(), desert(), desert2(), night(), mountain(): Encompass various game scenarios, each with unique challenges and choices.
 
 ## UX
 

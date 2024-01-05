@@ -279,7 +279,7 @@ def main():
     """
     introduction()
 
-    if forest() and forest2() and lake() and forest3() and desert() and desert2() and mountain():
+    if forest() and forest2() and lake() and forest3() and desert() and desert2() and mountain():  # noqa
         print(Fore.GREEN + "Congratulations! You reached the treasure.")
         print(Fore.GREEN + "You have Won!")
     else:

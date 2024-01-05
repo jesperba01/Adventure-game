@@ -1,16 +1,16 @@
 """
 Adventure Game
 
-This script implements a simple text-based adventure game where the player navigates through different scenarios,
+This script implements a simple text-based adventure game where the player navigates through different scenarios,  # noqa
 makes choices, and attempts to reach the treasure at the end of the journey.
 
 Functions:
 - introduction(): Display an introduction to the game.
-- main(): The main function that orchestrates the entire game, calling other functions based on player choices.
+- main(): The main function that orchestrates the entire game, calling other functions based on player choices.  # noqa
 - make_choice(options): Allow the player to make a choice from a list of options.
 
 Game:
-- forest(): Navigate through a dark forest with branching paths.
+- forest(): Navigate through a dark forest with branching paths.  # noqa
 - cave(): Explore a cave with potential dangers and choices.
 - cave2(): Continue the cave exploration with encounters with bandits.
 - forest2(): Follow the path after encountering a friendly creature.
@@ -37,11 +37,11 @@ def introduction():
     Display an introduction to the game.
     """
     print("Welcome to the Adventure Game!")
-    time.sleep(2)
+    time.sleep(1)
     print("You find yourself in a mysterious land.")
-    time.sleep(2)
+    time.sleep(1)
     print("Your goal is to reach the treasure at the end of the journey.")
-    time.sleep(2)
+    time.sleep(1)
 
 
 def make_choice(options):
@@ -50,7 +50,7 @@ def make_choice(options):
     """
     print("Choose your path:")
     for i, option in enumerate(options, 1):
-        print(f"{i}. {option}")    
+        print(f"{i}. {option}")
     """
     checks that answer is valid
     """
@@ -62,7 +62,7 @@ def make_choice(options):
             else:
                 print("Invalid choice. Please try again.")
         except ValueError:
-            print("Invalid input. Please enter a number.")    
+            print("Invalid input. Please enter a number.")
 
 
 def forest():
@@ -275,34 +275,13 @@ def mountain():
 
 def main():
     """
-    The main function that orchestrates the entire game, calling other functions based on player choices.
+    The main function that orchestrates the entire game, calling other functions based on player choices.  # noqa
     """
     introduction()
 
-    if forest():
-        if forest2():
-            if lake():
-                if forest3():
-                    if desert():
-                        if desert2():
-                            if mountain():
-                                print(
-                                    Fore.GREEN + "Congratulations! You reached the treasure.")
-                                print(Fore.GREEN + "You have Won!")
-                            else:
-                                print(
-                                    Fore.RED + "Game over! You did not reach the treasure.")
-                        else:
-                            print(
-                                Fore.RED + "Game over! You did not reach the treasure.")
-                    else:
-                        print(Fore.RED + "Game over! You did not reach the treasure.")
-                else:
-                    print(Fore.RED + "Game over! You did not reach the treasure.")
-            else:
-                print(Fore.RED + "Game over! You did not reach the treasure.")
-        else:
-            print(Fore.RED + "Game over! You did not reach the treasure.")
+    if forest() and forest2() and lake() and forest3() and desert() and desert2() and mountain():
+        print(Fore.GREEN + "Congratulations! You reached the treasure.")
+        print(Fore.GREEN + "You have Won!")
     else:
         print(Fore.RED + "Game over! You did not reach the treasure.")
 

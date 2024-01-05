@@ -8,6 +8,10 @@ The Adventure Game is a text-based Python script that immerses players in a  jou
 - make_choice(options): Allows players to make decisions from a list of options.
 - forest(), cave(), cave2(), forest2(), lake(), forest3(), desert(), desert2(), night(), mountain(): Encompass various game scenarios, each with unique challenges and choices.
 
+## Mock up
+
+![screenshot](assets/documentation/testing/mockuppp3.png)
+
 ## UX
 
 simpel consol whit different colors for when you win or lose
